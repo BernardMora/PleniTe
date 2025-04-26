@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PleniTé - El mejor té de la ciudad</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="logo">
+            <img src="media/img/logo.png" alt="PleniTé Logo" />
+            PleniTé
+          </a>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+          <nav>
+            <ul id="mainNav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Productos</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="btn order-btn">Ordenar ahora</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <div class="hero-text">
+            <p class="hero-label">El mejor té de la ciudad</p>
+            <h1>Una bebida para tu plenitud</h1>
+            <p>
+              Bienvenido a PleniTé, donde nos esforzamos por traer té de
+              excelente calidad y precio accesible a Tijuana, mientras
+              expandimos y enseñamos sobre la cultura del té alrededor del
+              mundo. Cada sorbo es un viaje de aroma y sabor, con tés
+              artesanales seleccionados de los mejores jardines del mundo.
+            </p>
+            <a href="#products" class="btn">Explorar</a>
+          </div>
+          <div class="hero-image">
+            <img
+              src="media/img/premium_drinking_tea.jpg"
+              alt="Taza de té premium"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curious Data Section (replacing Featured Products) -->
+    <section class="curious-data" id="curious-data">
+      <div class="container">
+        <h2>Datos Curiosos sobre el Té</h2>
+
+        <!-- First data item -->
+        <div class="data-item fade-in">
+          <div class="data-content">
+            <h3>☕ Para los que necesitan su dosis de cafeína...</h3>
+            <p>
+              El té también contiene cafeína, pero en menor cantidad que el
+              café, ¡perfecto para energía suave y duradera!
+            </p>
+            <a
+              href="https://elpais.com/gastronomia/el-comidista/2019/04/24/articulo/1556118126_063816.html"
+              class="btn"
+              >Explorar más</a
+            >
+          </div>
+          <div class="data-image">
+            <img src="media/img/tea_and_coffee.jpg" alt="Cafeína en el té" />
+          </div>
+        </div>
+
+        <!-- Second data item -->
+        <div class="data-item fade-in">
+          <div class="data-content">
+            <h3>🌍 Un ritual milenario</h3>
+            <p>
+              El té es la segunda bebida más consumida en el mundo, solo después
+              del agua. ¡Una tradición que une culturas!
+            </p>
+            <a
+              href="https://es.statista.com/grafico/30032/encuestados-que-consumen-te-regularmente/"
+              class="btn"
+              >Explorar más</a
+            >
+          </div>
+          <div class="data-image">
+            <img src="media/img/tea_ritual.jpeg" alt="Té alrededor del mundo" />
+          </div>
+        </div>
+
+        <!-- Third data item -->
+        <div class="data-item fade-in">
+          <div class="data-content">
+            <h3>🌿 ¿Sabías que todos los tés provienen de la misma planta?</h3>
+            <p>
+              Aunque existen innumerables variedades, los seis tipos principales
+              de té se diferencian por su proceso de elaboración. Todos
+              provienen de la planta Camellia sinensis, y sus diferencias
+              radican en cómo se procesan las hojas después de la cosecha.​
+            </p>
+            <a
+              href="https://www.finedininglovers.com/es/noticia/tipos-de-te"
+              class="btn"
+              >Explorar más</a
+            >
+          </div>
+          <div class="data-image">
+            <img src="media/img/tea_plant.webp" alt="Variedad de tés" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog" id="products">
+      <div class="container">
+        <div class="catalog-intro">
+          <h2>Tés</h2>
+          <p>
+            En PleniTé seleccionamos tés únicos para ofrecerte calidad, frescura
+            y tradición en cada taza.
+          </p>
+        </div>
+        <div class="catalog-grid fade-in">
+          <div class="catalog-item">
+            <div class="product-details">
+              <h3>Té Blanco Puro</h3>
+              <p>Delicado y sutil, con notas dulces y florales.</p>
+            </div>
+            <div class="catalog-image">
+              <img src="media/img/white_tea.webp" alt="Té Blanco Puro" />
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="product-details">
+              <h3>Chai Especiado</h3>
+              <p>Una mezcla aromática con especias exóticas.</p>
+            </div>
+            <div class="catalog-image">
+              <img src="media/img/spiced_chai.jpg" alt="Chai Especiado" />
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="product-details">
+              <h3>Matcha Ceremonial</h3>
+              <p>Polvo de té verde de la más alta calidad.</p>
+            </div>
+            <div class="catalog-image">
+              <img src="media/img/matcha_tea.webp" alt="Matcha Ceremonial" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-container fade-in">
+          <h3 class="text-center">Té Verde: Beneficios y cómo tomar</h3>
+          <video controls>
+            <source src="media/video.mp4" type="video/mp4" />
+            Tu navegador no soporta el elemento de video.
+          </video>
+        </div>
+
+        <div class="table-container fade-in">
+          <h2 class="text-center">Nuestros tés</h2>
+          <table class="tea-table">
+            <thead>
+              <tr>
+                <th>Tipo de té</th>
+                <th>Origen</th>
+                <th>Tiempo de infusión</th>
+                <th>Temperatura</th>
+                <th>Beneficios</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Té Verde</td>
+                <td>Japón</td>
+                <td>2-3 minutos</td>
+                <td>75-80°C</td>
+                <td>Rico en antioxidantes, mejora la concentración</td>
+              </tr>
+              <tr>
+                <td>Té Negro</td>
+                <td>India</td>
+                <td>3-5 minutos</td>
+                <td>95-100°C</td>
+                <td>Estimula la energía, favorece la digestión</td>
+              </tr>
+              <tr>
+                <td>Té Blanco</td>
+                <td>China</td>
+                <td>4-5 minutos</td>
+                <td>80-85°C</td>
+                <td>
+                  Refuerza el sistema inmunológico, propiedades
+                  anti-envejecimiento
+                </td>
+              </tr>
+              <tr>
+                <td>Té Oolong</td>
+                <td>Taiwán</td>
+                <td>3-4 minutos</td>
+                <td>85-90°C</td>
+                <td>Ayuda al metabolismo, reduce el colesterol</td>
+              </tr>
+              <tr>
+                <td>Rooibos</td>
+                <td>Sudáfrica</td>
+                <td>5-7 minutos</td>
+                <td>100°C</td>
+                <td>
+                  Libre de cafeína, alivia alergias y problemas digestivos
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid fade-in">
+          <div class="stat-item">
+            <h3 class="stat-number">24+</h3>
+            <p class="stat-text">Tiendas de PleniTé alrededor del mundo</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number">5M</h3>
+            <p class="stat-text">Tazas de té servidas</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number">+98%</h3>
+            <p class="stat-text">Clientes satisfechos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="text-center">Lo que dicen nuestros clientes</h2>
+        <div class="testimonials-grid fade-in">
+          <div class="testimonial">
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>"Una experiencia de té inolvidable."</p>
+            <p><strong>- Ana Gómez</strong></p>
+          </div>
+          <div class="testimonial">
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>"Calidad excepcional y atención perfecta."</p>
+            <p><strong>- Luis Fernández</strong></p>
+          </div>
+          <div class="testimonial">
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>"Mi lugar favorito para relajarme y disfrutar."</p>
+            <p><strong>- Marta Sánchez</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="text-center">Contáctanos</h2>
+        <div class="form-container fade-in">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>PleniTé</h3>
+            <p>Donde cada sorbo es un viaje de aroma y sabor.</p>
+          </div>
+          <div class="footer-column">
+            <h3>Navegación</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Productos</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contacto</h3>
+            <ul>
+              <li>Email: info@plenite.com</li>
+              <li>Teléfono: +52 664 385 8453</li>
+              <li>Dirección: Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Síguenos</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 PleniTé. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("mobileMenuToggle")
+        .addEventListener("click", function () {
+          document.getElementById("mainNav").classList.toggle("active");
+        });
+
+      // Form validation
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+
+          let isValid = true;
+
+          if (name.trim() === "") {
+            isValid = false;
+            document.getElementById("name").style.borderColor = "red";
+          } else {
+            document.getElementById("name").style.borderColor = "#ddd";
+          }
+
+          if (email.trim() === "" || !email.includes("@")) {
+            isValid = false;
+            document.getElementById("email").style.borderColor = "red";
+          } else {
+            document.getElementById("email").style.borderColor = "#ddd";
+          }
+
+          if (message.trim() === "") {
+            isValid = false;
+            document.getElementById("message").style.borderColor = "red";
+          } else {
+            document.getElementById("message").style.borderColor = "#ddd";
+          }
+
+          if (isValid) {
+            alert("¡Gracias por tu mensaje! Te responderemos pronto.");
+            this.reset();
+          }
+        });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+
+          // Close mobile menu if open
+          if (document.getElementById("mainNav").classList.contains("active")) {
+            document.getElementById("mainNav").classList.remove("active");
+          }
+        });
+      });
+
+      // Animation on scroll
+      document.addEventListener("DOMContentLoaded", function () {
+        const fadeElements = document.querySelectorAll(".fade-in");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = "translateY(0)";
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+
+        fadeElements.forEach((element) => {
+          element.style.opacity = 0;
+          element.style.transform = "translateY(20px)";
+          element.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+          observer.observe(element);
+        });
+      });
+    </script>
+  </body>
+</html>
