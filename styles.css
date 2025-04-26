@@ -21,12 +21,12 @@ img {
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin: auto;
+  padding: 15px;
 }
 
 section {
-  padding: 50px 0;
+  padding: 50px;
 }
 
 h1,
@@ -53,14 +53,10 @@ h2 {
   text-decoration: none;
   font-weight: 600;
   border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .btn:hover {
   background-color: #68a538;
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .text-center {
@@ -109,7 +105,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 15px;
 }
 
 nav ul li:last-child {
@@ -120,7 +116,6 @@ nav ul li a {
   color: #7ac142;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -172,13 +167,13 @@ nav ul li a:hover {
 }
 
 .hero-image img {
-  width: 100%; /* Make image fill container width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure image covers area without distortion */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 10px;
 }
 
-/* Curious Data Section Styles - Updated */
+/* Curious Data Section Styles */
 .curious-data {
   background-color: #f8f9fa;
   padding: 60px 0;
@@ -225,35 +220,8 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-  /* Combine all 768px media queries into one */
-  nav {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .mobile-menu-toggle {
-    margin-left: auto;
-    margin-right: 20px;
-  }
-
   nav ul {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  nav ul li {
-    margin: 10px 30px;
   }
 
   .hero-content,
@@ -269,38 +237,14 @@ nav ul li a:hover {
     text-align: center;
   }
 
-  .hero-image,
-  .data-image {
-    width: 100%;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .table-container {
-    margin: 20px -15px;
-    padding: 0 15px;
-    width: calc(100% + 30px);
-  }
-
   .tea-table th,
   .tea-table td {
     padding: 12px 15px;
     font-size: 14px;
   }
-
-  .catalog-image {
-    height: 200px;
-  }
 }
 
 /* Catalog Section */
-.catalog {
-  background-color: white;
-}
-
 .catalog-intro {
   text-align: center;
   max-width: 700px;
@@ -314,11 +258,9 @@ nav ul li a:hover {
 }
 
 .catalog-item {
-  background-color: #f8f9fa;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  border-bottom: 3px solid #3e7a3f;
   display: flex;
   flex-direction: column;
 }
@@ -330,14 +272,13 @@ nav ul li a:hover {
 
 .catalog-image {
   width: 100%;
-  height: 250px; /* Fixed height for all images */
+  height: 250px;
   overflow: hidden;
 }
 
 .catalog-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This ensures images cover the area without distortion */
 }
 
 /* Stats Section */
@@ -361,7 +302,6 @@ nav ul li a:hover {
   font-size: 2.5rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 10px;
 }
 
 .stat-text {
@@ -445,7 +385,6 @@ footer {
 
 .footer-column h3 {
   color: #7ac142;
-  margin-bottom: 20px;
 }
 
 .footer-column ul {
@@ -456,35 +395,88 @@ footer {
   margin-bottom: 10px;
 }
 
-.footer-column ul li a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
 .footer-column ul li a:hover {
   color: #3e7a3f;
 }
 
-.copyright {
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.9rem;
-}
-
-/* Mobile Menu */
+/* Mobile Menu Styles */
 .mobile-menu-toggle {
   display: none;
   background: none;
   border: none;
-  font-size: 1.5rem;
   cursor: pointer;
-  color: #7ac142;
+  padding: 0;
+  z-index: 100;
 }
 
-/* Media Queries */
+.hamburger-icon {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+}
+
+.hamburger-icon .line {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #7ac142;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-icon .line:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-icon .line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-icon .line:nth-child(3) {
+  bottom: 0;
+}
+
+/* Update existing media queries */
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    padding: 80px 20px;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  nav.active {
+    right: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .order-btn {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
   h1 {
     font-size: 2rem;
@@ -545,13 +537,12 @@ video {
 /* Table Styles */
 .table-container {
   width: 100%;
-  overflow-x: auto; /* Enables horizontal scrolling on mobile */
+  overflow-x: auto;
   margin: 20px 0;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 .tea-table {
-  min-width: 700px; /* Minimum width to ensure content is readable */
+  min-width: 700px;
   width: 100%;
   border-collapse: collapse;
   margin-top: 30px;
